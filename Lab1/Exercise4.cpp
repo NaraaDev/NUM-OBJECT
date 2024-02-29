@@ -4,7 +4,7 @@
 using namespace std;
 
 // Сондгой тоонуудын нийлбэр болон арифметик дундаж олох дотоод функц
-inline void ArithmeticOdds(int N, int a[]) {
+inline int ArithmeticOdds(int N, int a[]) {
 
     // Нийлбэр болон тоолуур хувьсагч
     int sumOfOdds = 0, countOfOdds = 0;
@@ -20,7 +20,7 @@ inline void ArithmeticOdds(int N, int a[]) {
             countOfOdds++;
         }
     
-    cout << "Сондгой тоонуудын арифметик дундаж: " << sumOfOdds / countOfOdds;
+    return sumOfOdds / countOfOdds;
 
 }
 
@@ -41,6 +41,6 @@ int main() {
         cin >> a[i];
 
     // Дотоод функцийг дуудах
-    ArithmeticOdds(N, a);
+    cout << "Өгөгдсөн N ширхэг элементийн арифметик дундаж: " << ArithmeticOdds(N, a);
 
 }

@@ -4,7 +4,7 @@
 using namespace std;
 
 // Орон болон цифр олох дотоод функц
-inline void NumberOfDigit(int N) {
+inline [] NumberOfDigit(int N) {
 
     int countOfDigits = 0, copyNum = N;
     // Тоог 10-т хуваах зарчмаар оронг нэгээр багасгах
@@ -38,6 +38,6 @@ int main() {
     // Натурал тоог гараас авах
     cin >> N;
 
-    NumberOfDigit(N);
+    int digits[] = NumberOfDigit(N);
 
 }
